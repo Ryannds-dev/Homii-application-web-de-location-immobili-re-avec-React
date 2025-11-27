@@ -1,7 +1,7 @@
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import logements from "../data/logements.json";
-import homeBanner from "../assets/fond_home_banner.png";
+import homeBanner from "../assets/fond_home_banner.webp";
 import "../styles/card-container.scss";
 
 export default function Home() {
