@@ -1,0 +1,90 @@
+@use "../styles/globals" as *;
+
+.housing {
+  margin: 30px 80px 0; // même marge que header/banner
+}
+
+/* -------------------------
+   Bloc haut
+-------------------------- */
+
+.housing__top {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.housing__left {
+  max-width: 70%;
+}
+
+.housing__tags {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.housing__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* -------------------------
+   Bloc bas : 2 Collapse
+-------------------------- */
+
+.housing__collapses {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+// .housing__collapses > * {
+//   flex: 1;
+// }
+
+.housing__equipments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* -------------------------
+   Mobile
+-------------------------- */
+
+@media (max-width: 768px) {
+  .housing {
+    margin: 20px;
+  }
+
+  .housing__top {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .housing__left {
+    max-width: 100%;
+  }
+
+  /* rating à gauche, host à droite */
+  .housing__right {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .housing__collapses {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

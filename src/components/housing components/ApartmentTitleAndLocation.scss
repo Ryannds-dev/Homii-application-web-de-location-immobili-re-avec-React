@@ -1,0 +1,29 @@
+@use "../../styles/globals" as *;
+
+.apartment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.apartment-info__title {
+  color: $color-primary;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.apartment-info__location {
+  color: $color-black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .apartment-info__title {
+    font-size: 18px;
+  }
+
+  .apartment-info__location {
+    font-size: 14px;
+  }
+}

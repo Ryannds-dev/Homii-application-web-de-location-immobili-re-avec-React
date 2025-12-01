@@ -2,10 +2,12 @@
 
 .slideshow {
   position: relative;
-  width: 100%;
+  // width: 100%;
   height: 415px;
   border-radius: 25px;
   overflow: hidden;
+
+  margin: 15px 20px;
 }
 
 /* image qui remplit le bloc */
@@ -32,7 +34,7 @@
   border: none;
 
   color: $color-white;
-  font-size: 48px;
+  font-size: 200px;
   font-weight: 700;
 
   cursor: pointer;
@@ -59,7 +61,7 @@
   transform: translateX(-50%);
 
   color: $color-white;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 500;
 
   /* lisibilité */
@@ -70,17 +72,17 @@
   .slideshow {
     height: 255px;
     border-radius: 10px;
+    margin: 15px 20px;
   }
 
   .slideshow__arrow {
     width: 24px;
-    height: 24px;
-    font-size: 18px;
+    font-size: 40px;
     margin-top: -12px;
   }
 
   .slideshow__counter {
-    font-size: 14px;
+    font-size: 20px;
     bottom: 10px;
   }
 }
