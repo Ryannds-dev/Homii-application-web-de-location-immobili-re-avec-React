@@ -41,6 +41,10 @@
 
     text-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 2px rgba(0, 0, 0, 1);
     z-index: 1;
+
+    .mobile-break {
+      display: none;
+    }
   }
 }
 
@@ -54,6 +58,10 @@
     &__title {
       font-size: 24px;
       text-shadow: none;
+
+      .mobile-break {
+        display: inline;
+      }
     }
   }
 }

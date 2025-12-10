@@ -7,7 +7,15 @@ import "../styles/card-container.scss";
 export default function Home() {
   return (
     <>
-      <Banner text="Chez vous, partout et ailleurs" image={fondHomeBanner} />
+      <Banner
+        text={
+          <>
+            Chez vous, <br className="mobile-break" />
+            partout et ailleurs
+          </>
+        }
+        image={fondHomeBanner}
+      />
 
       <section className="cards-container">
         {logements.map((logement) => (
