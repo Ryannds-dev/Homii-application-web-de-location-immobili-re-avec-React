@@ -3,20 +3,20 @@
 .host {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 
   &__name {
     color: $color-primary;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 700;
     text-align: right;
+    letter-spacing: 0.2px;
   }
 
-  /* Photo arrondie */
   &__picture {
     width: 64px;
     height: 64px;
-    border-radius: 50%;
+    border-radius: 4px;
     object-fit: cover;
     background-color: $color-grey;
   }

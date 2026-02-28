@@ -1,17 +1,11 @@
 @use "../styles/globals" as *;
 
 .banner {
-  /* même marge horizontale que le header, rien en haut */
-  margin: 0 80px;
-
-  height: 223px;
-  border-radius: 25px;
-  border: 1px solid $color-black;
+  margin: 0;
+  height: 290px;
+  border-radius: 0;
   background-size: cover;
   background-position: center;
-
-  /* drop shadow uniquement sur PC */
-  box-shadow: 0 4px 4px rgba($color-black, 0.25);
 
   display: flex;
   align-items: center;
@@ -20,7 +14,6 @@
   position: relative;
   overflow: hidden;
 
-  /* Overlay noir fixe à 60 % */
   &::before {
     content: "";
     position: absolute;
@@ -28,18 +21,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.52);
     z-index: 0;
   }
 
-  /* Titre dans la bannière (si présent) */
   &__title {
     color: $color-white;
     font-weight: 700;
-    font-size: 48px;
-    padding: 10px 20px;
-
-    text-shadow: 0 0 2px rgba(0, 0, 0, 1), 0 0 2px rgba(0, 0, 0, 1);
+    font-size: 52px;
+    letter-spacing: -1.5px;
     z-index: 1;
 
     .mobile-break {
@@ -50,14 +40,11 @@
 
 @media (max-width: 768px) {
   .banner {
-    margin: 0 20px; // comme le header mobile
-    height: 111px;
-    box-shadow: none;
-    border-radius: 10px;
+    height: 160px;
 
     &__title {
-      font-size: 24px;
-      text-shadow: none;
+      font-size: 26px;
+      letter-spacing: -0.5px;
 
       .mobile-break {
         display: inline;

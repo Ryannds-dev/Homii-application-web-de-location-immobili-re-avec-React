@@ -10,8 +10,8 @@ export default function Home() {
       <Banner
         text={
           <>
-            Chez vous, <br className="mobile-break" />
-            partout et ailleurs
+            Votre évasion, <br className="mobile-break" />
+            où que vous alliez
           </>
         }
         image={fondHomeBanner}

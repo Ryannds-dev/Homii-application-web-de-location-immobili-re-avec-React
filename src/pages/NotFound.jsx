@@ -7,11 +7,11 @@ export default function NotFound() {
       <h1 className="notfound__code">404</h1>
 
       <p className="notfound__message">
-        Oups ! La page que vous demandez n'existe pas.
+        Cette page n’existe pas ou a été déplacée.
       </p>
 
       <Link to="/" className="notfound__link">
-        Retourner sur la page d’accueil
+        Retour à l’accueil
       </Link>
     </div>
   );

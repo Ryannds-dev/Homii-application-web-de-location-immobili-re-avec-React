@@ -2,8 +2,9 @@
 
 .card {
   width: 100%;
-  height: 340px;
-  border-radius: 10px;
+  height: 320px;
+  border-radius: 0;
+  overflow: hidden;
 
   background-size: cover;
   background-position: center;
@@ -11,23 +12,56 @@
   position: relative;
   cursor: pointer;
 
-  // Titre du logement
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(56, 189, 248, 0.28);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+    z-index: 0;
+  }
+
   &__title {
     position: absolute;
-    bottom: 15px;
-    left: 15px;
+    bottom: 16px;
+    left: 16px;
+    z-index: 2;
 
     color: $color-white;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
+    letter-spacing: 0.2px;
 
-    padding-right: 10px; // pour éviter que le texte touche le bord droit
-    line-height: 1.2;
+    padding-right: 12px;
+    line-height: 1.3;
   }
 }
 
 @media (max-width: 768px) {
   .card {
-    height: 255px;
+    height: 220px;
   }
 }

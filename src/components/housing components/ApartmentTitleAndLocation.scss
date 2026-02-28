@@ -3,30 +3,35 @@
 .apartment-info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   margin: 0 20px;
 
   &__title {
     color: $color-primary;
-    font-weight: 500;
-    font-size: 36px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
   }
 
   &__location {
     color: $color-black;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 }
 
 @media (max-width: 768px) {
-  .appartment-info {
+  .apartment-info {
     &__title {
       font-size: 18px;
     }
 
     &__location {
-      font-size: 14px;
+      font-size: 11px;
+      letter-spacing: 1px;
     }
   }
 }
