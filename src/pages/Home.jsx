@@ -10,7 +10,7 @@ export default function Home() {
       <Banner
         text={
           <>
-            Votre évasion, <br className="mobile-break" />
+            Homii : votre évasion, <br className="mobile-break" />
             où que vous alliez
           </>
         }
